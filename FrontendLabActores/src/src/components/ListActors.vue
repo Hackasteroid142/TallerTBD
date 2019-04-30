@@ -27,7 +27,7 @@
 		<v-card>
 			<v-toolbar color="pink" dark>
 				<v-toolbar-side-icon></v-toolbar-side-icon>
-				<v-toolbar-title>Peliculas</v-toolbar-title>
+				<v-toolbar-title>Peliculas de {{ actorName }} {{ actorLast }}</v-toolbar-title>
 				<v-spacer></v-spacer>
 
 			</v-toolbar>
@@ -71,7 +71,9 @@
 				actors: [],
 				films: [],
 				actor: '',
-				idActor: ''
+				idActor: '',
+				actorName: '',
+				actorLast: ''
 			};
 		},
 		created(){
@@ -86,6 +88,8 @@
 				axios.get('http://localhost:8081/actors/'+ actor.id + '/films').
 				then( response => {
 					this.films = response.data;
+					this.actorName = actor.firstName;
+					this.actorLast = actor.lastName;
 					console.log(this.films);
 				});
 			}
