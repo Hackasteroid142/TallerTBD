@@ -1,6 +1,6 @@
 <template>
 	<div class="actors">
-		<li v-for="actor in actors">{{ actor.firstName }}</li>
+		<li v-for="actor in actors">{{ actor.firstName }} {{actor.lastName}}</li>
 		<AddActor/>
 	</div>
 </template>
