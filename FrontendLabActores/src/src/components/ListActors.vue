@@ -2,7 +2,7 @@
 	<v-layout row>
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
-        <v-toolbar color="pink" dark>
+        <v-toolbar color="blue" dark>
           <v-toolbar-side-icon></v-toolbar-side-icon>
           <v-toolbar-title>Actores</v-toolbar-title>
           <v-spacer></v-spacer>
@@ -12,8 +12,7 @@
           <template v-for="(actor, index) in actors">
             <v-list-tile :key="index" avatar ripple @click="getFilms(actor)">
               <v-list-tile-content>
-                <v-list-tile-title>{{ actor.firstName }}</v-list-tile-title>
-                <v-list-tile-title>{{ actor.lastName }}</v-list-tile-title>
+                <v-list-tile-title>{{ actor.firstName }} {{actor.lastName}}</v-list-tile-title>
               </v-list-tile-content>
 
             </v-list-tile>
