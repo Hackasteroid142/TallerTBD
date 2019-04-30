@@ -1,10 +1,12 @@
 <template>
 	<v-layout row>
+		
     <v-flex xs12 sm6 offset-sm3>
-							<add-actor> </add-actor>
-
       <v-card>
+				<add-actor> </add-actor>
+				
         <v-toolbar color="pink" dark>
+					
           <v-toolbar-side-icon></v-toolbar-side-icon>
           <v-toolbar-title>Actores</v-toolbar-title>
           <v-spacer></v-spacer>
