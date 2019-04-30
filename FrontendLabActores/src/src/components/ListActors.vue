@@ -11,7 +11,7 @@
 					</v-toolbar>
 					<v-list two-line>
 						<template v-for="(actor, index) in actors">
-							<v-list-tile :key="index" avatar ripple v-on="on" @click="getFilms(actor)">
+							<v-list-tile :key="index" avatar ripple v-on="on" @click.stop="dialog = true" @click="getFilms(actor)">
 								<v-list-tile-content>
 									<v-list-tile-title>{{ actor.firstName }}</v-list-tile-title>
 									<v-list-tile-title>{{ actor.lastName }}</v-list-tile-title>
