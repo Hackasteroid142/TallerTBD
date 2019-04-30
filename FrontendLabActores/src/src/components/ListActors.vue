@@ -1,7 +1,6 @@
 <template>
 	<div class="actors">
-		<li v-for="actor in actors">{{ actor.id }} <button type="button" @click="getFilms(actor)">Click to submit</button></li>	
-		<li v-for="actor in actors">{{ actor.firstName }} {{actor.lastName}}</li>
+		<li v-for="actor in actors">{{ actor.firstName }} {{actor.lastName}}<button type="button" @click="getFilms(actor)">Click to submit</button></li>	
 		<AddActor/>
 	</div>
 </template>
