@@ -6,29 +6,47 @@
           <v-toolbar-side-icon></v-toolbar-side-icon>
           <v-toolbar-title>Actores</v-toolbar-title>
           <v-spacer></v-spacer>
-          
+
         </v-toolbar>
         <v-list two-line>
           <template v-for="(actor, index) in actors">
-            <v-list-tile :key="index" avatar ripple @click="">
+            <v-list-tile :key="index" avatar ripple @click="getFilms(actor)">
               <v-list-tile-content>
                 <v-list-tile-title>{{ actor.firstName }}</v-list-tile-title>
                 <v-list-tile-title>{{ actor.lastName }}</v-list-tile-title>
-
               </v-list-tile-content>
- 
+
             </v-list-tile>
             <v-divider v-if="index + 1 < actors.length" :key="`divider-${index}`"></v-divider>
           </template>
         </v-list>
       </v-card>
+			<v-card>
+				<v-toolbar color="pink" dark>
+					<v-toolbar-side-icon></v-toolbar-side-icon>
+					<v-toolbar-title>Peliculas</v-toolbar-title>
+					<v-spacer></v-spacer>
+
+				</v-toolbar>
+				<v-list two-line>
+					<template v-for="(film, index) in films">
+						<v-list-tile :key="index" avatar ripple @click="">
+							<v-list-tile-content>
+								<v-list-tile-title>{{ film.title }}</v-list-tile-title>
+							</v-list-tile-content>
+
+						</v-list-tile>
+						<v-divider v-if="index + 1 < actors.length" :key="`divider-${index}`"></v-divider>
+					</template>
+				</v-list>
+			</v-card>
     </v-flex>
   </v-layout>
 
 </template>
 <!--<template>
 	<div class="actors">
-		<li v-for="actor in actors">{{ actor.firstName }} {{actor.lastName}}<button type="button" @click="getFilms(actor)">Click to submit</button></li>	
+		<li v-for="actor in actors">{{ actor.firstName }} {{actor.lastName}}<button type="button" @click="getFilms(actor)">Click to submit</button></li>
 		<AddActor/>
 	</div>
 </template>
@@ -60,7 +78,7 @@
 				});
 		},
 		methods: {
-			getFilms(actor){ 
+			getFilms(actor){
 				console.log(actor.id);
 				axios.get('http://localhost:8081/actors/'+ actor.id + '/films').
 				then( response => {
@@ -72,4 +90,3 @@
 	}
 
 </script>
-
