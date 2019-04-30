@@ -3,6 +3,7 @@ HELP.md
 /build/
 /main/resources/
 !gradle/wrapper/gradle-wrapper.jar
+/src/main/resources/application.properties
 
 ### STS ###
 .apt_generated
