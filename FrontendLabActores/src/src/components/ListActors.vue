@@ -31,7 +31,7 @@
 					<v-toolbar-title>Peliculas de {{ actorName }} {{ actorLastName }}</v-toolbar-title>
 					<v-spacer></v-spacer>
 
-				</v-toolbar>
+				</v-toolbar>c
 				<v-list two-line>
 					<template v-for="(film, index) in films">
 						<v-list-tile :key="index" avatar ripple @click="">
