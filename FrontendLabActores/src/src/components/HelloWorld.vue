@@ -1,58 +1,16 @@
 <template>
-  <v-container>
-    <v-layout
-      text-xs-center
-      wrap
-    >
-      <v-flex xs12>
-        <v-img
-          :src="require('../assets/logo.svg')"
-          class="my-3"
-          contain
-          height="200"
-        ></v-img>
-      </v-flex>
+<!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in"> Taller 1 TBD</div>
+        <div class="intro-heading text-uppercase"></div>
+        <a href = "https://github.com/Hackasteroid142/TallerTBD " class="btn btn-primary btn-xl text-uppercase js-scroll-trigger">Github</a>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#/actors">Actores</a>
+      </div>
 
-      <v-flex mb-4>
-        <h1 class="display-2 font-weight-bold mb-3">
-           Taller 1 TBD
-        </h1>
-        <p class="subheading font-weight-regular">
-        
-        </p>
-      </v-flex>
-
-      <v-flex
-        mb-5
-        xs12
-      >
-
-        
-      </v-flex>
-
-      <v-flex
-        xs12
-        mb-5
-      >
-        <h2 class="headline font-weight-bold mb-3">Opciones</h2>
-
-   
-      </v-flex>
-
-      <v-flex
-        xs12
-        mb-5
-      >
-<template>
-  <div>
-    <v-btn href="https://github.com/Hackasteroid142/TallerTBD" v-btn large color="success">Github </v-btn>
-    <v-btn large color="warning">Actores</v-btn>
-    
-  </div>
-</template>
-      </v-flex>
-    </v-layout>
-  </v-container>
+    </div>
+  </header>
 </template>
 
 <script>
