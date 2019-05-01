@@ -3,8 +3,8 @@
 		<v-layout justify-center>
     <v-flex xs12 sm10 md8 lg6>
       <v-card ref="form">
-				<h2>Añadir actor</h2>
         <v-card-text>
+        	<h3>Añadir actor</h3>
           <v-text-field
             ref="nombre"
             v-model="firstName"
@@ -25,7 +25,7 @@
           ></v-text-field>
         </v-card-text>
         <v-card-actions>
-          <v-btn color="primary" style="margin:auto" flat @click="onSubmit">Agregar Actor</v-btn>
+          <v-btn color="pink" style="margin:auto" flat @click="onSubmit">Agregar Actor</v-btn>
         </v-card-actions>
       </v-card>
     </v-flex>

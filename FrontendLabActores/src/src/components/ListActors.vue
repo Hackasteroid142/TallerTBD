@@ -2,9 +2,14 @@
 	<v-layout row>
     <v-dialog v-model="dialog" width="600px">
       <template v-slot:activator="{ on }">
-			<v-flex xs12 sm6 offset-sm3>
+      		<v-layout column>
+				<v-flex xs12>
+				  <add-actor> </add-actor>
+				</v-flex>
+			</v-layout>
+			<v-layout column>
+			<v-flex xs12>
 				<v-card>
-					<add-actor> </add-actor>
 					<v-toolbar color="pink" dark>
 						<v-toolbar-side-icon></v-toolbar-side-icon>
 						<v-toolbar-title>Actores</v-toolbar-title>
@@ -24,6 +29,7 @@
 					</v-list>
 				</v-card>
 			</v-flex>
+		</v-layout>
       </template>
 			<v-card>
 				<v-toolbar color="pink" dark>

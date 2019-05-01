@@ -1,15 +1,17 @@
 <template>
-
-
   <v-app>
-
-    
     <v-toolbar app>
       <v-toolbar-title class="headline text-uppercase">
         <span>TBD</span>
         <span class="font-weight-light">Actores</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
+         <v-btn
+        flat
+        href="/"
+      >
+        <span class="mr-2">Inicio</span>
+      </v-btn>
       <v-btn
         flat
         href="https://github.com/Hackasteroid142/TallerTBD"
@@ -17,10 +19,7 @@
       >
         <span class="mr-2">GitHub</span>
       </v-btn>
-    </v-toolbar>
-
-
-  
+    </v-toolbar>  
     <v-content>
       <router-view></router-view>
     </v-content>
