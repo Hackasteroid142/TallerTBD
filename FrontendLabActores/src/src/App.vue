@@ -1,13 +1,13 @@
 <template>
   <v-app>
-    <v-toolbar app>
+    <v-toolbar app color="pink" dark>
       <v-toolbar-title class="headline text-uppercase">
         <span>TBD</span>
         <span class="font-weight-light">Actores</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
          <v-btn
-        flat
+         flat
         href="/"
       >
         <span class="mr-2">Inicio</span>
