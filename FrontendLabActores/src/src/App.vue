@@ -12,10 +12,10 @@
       <v-spacer></v-spacer>
       <v-btn
         flat
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        href="https://github.com/Hackasteroid142/TallerTBD"
         target="_blank"
       >
-        <span class="mr-2">Latest Release</span>
+        <span class="mr-2">GitHub</span>
       </v-btn>
     </v-toolbar>
 

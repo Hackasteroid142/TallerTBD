@@ -1,10 +1,5 @@
 <template>
 	<div class="AddActor">
-		<!--<center>
-		<h1>Añadir actor</h1></center>
-		<input type="text" class="form-control" v-model="firstName" placeholder="Nombre">
-		<input type="text" class="form-control" v-model="lastName" placeholder="Apellido">
-		<v-btn color="success" style="margin: auto; display: block;" @click="onSubmit">Añadir</v-btn>-->
 		<v-layout justify-center>
     <v-flex xs12 sm10 md8 lg6>
       <v-card ref="form">
@@ -58,9 +53,9 @@
 				}).
 				then(response =>{
 					console.log(response.data);
-                	this.firstName = '';
-                	this.lastName = '';
-									location.reload();
+					this.firstName = '';
+					this.lastName = '';
+					location.reload();
 				});
 			}
 			}

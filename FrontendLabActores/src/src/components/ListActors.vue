@@ -31,10 +31,10 @@
 					<v-toolbar-title>Peliculas de {{ actorName }} {{ actorLastName }}</v-toolbar-title>
 					<v-spacer></v-spacer>
 
-				</v-toolbar>c
+				</v-toolbar>
 				<v-list two-line>
 					<template v-for="(film, index) in films">
-						<v-list-tile :key="index" avatar ripple @click="">
+						<v-list-tile :key="index" avatar ripple>
 							<v-list-tile-content>
 								<v-list-tile-title>{{ film.title }}</v-list-tile-title>
 							</v-list-tile-content>
@@ -47,13 +47,7 @@
     </v-dialog>
   </v-layout>
 </template>
-<!--<template>
-	<div class="actors">
-		<li v-for="actor in actors">{{ actor.firstName }} {{actor.lastName}}<button type="button" @click="getFilms(actor)">Click to submit</button></li>
-		<AddActor/>
-	</div>
-</template>
--->
+
 <script>
 	import axios from 'axios'
 	import AddActor from './AddActor.vue'
